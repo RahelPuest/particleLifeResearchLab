@@ -4,7 +4,7 @@ Just a small toy to play with particles and enjoy emergent behaviour.
 
 Four kinds of particles, a handful of simple attraction/repulsion rules – and suddenly things start to swarm, chase each other, form cells and fall apart again. No AI, no training, no backend: everything runs right in your browser.
 
-**[▶ Try it live](https://stefanpuest.github.io/particleLifeResearchLab/)**
+**[▶ Try it live](https://rahelpuest.github.io/particleLifeResearchLab/)**
 
 ![Screenshot](reports/visual-effects.png)
 
