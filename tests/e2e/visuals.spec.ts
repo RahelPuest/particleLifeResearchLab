@@ -1,11 +1,12 @@
 import { test, expect } from "@playwright/test";
+import { stableSimTime } from "./helpers";
 
 test("visual controls apply on CPU, persist, and do not advance a paused simulation", async ({
   page,
 }) => {
   await page.goto("/");
   await page.getByRole("button", { name: "Pause", exact: true }).click();
-  const time = await page.locator(".simulation-bottom b").textContent();
+  const time = await stableSimTime(page);
   await page.getByLabel("Visualization", { exact: true }).selectOption("glow");
   await page.getByLabel("Color by", { exact: true }).selectOption("speed");
   await page.getByLabel("Particle size", { exact: true }).fill("2");
@@ -16,7 +17,7 @@ test("visual controls apply on CPU, persist, and do not advance a paused simulat
   await page.getByRole("button", { name: "Save settings" }).click();
   const path = await (await downloading).path();
   await page.getByLabel("Visualization", { exact: true }).selectOption("rings");
-  await expect(page.locator(".simulation-bottom b")).toHaveText(time!);
+  await expect(page.locator(".simulation-bottom b")).toHaveText(time);
   await page.locator("input[type=file]").setInputFiles(path!);
   await expect(page.getByLabel("Visualization", { exact: true })).toHaveValue(
     "glow",

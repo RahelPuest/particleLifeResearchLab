@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { stableSimTime } from "./helpers";
 
 test("glass themes switch live, fit mobile and round-trip settings", async ({
   page,
@@ -6,23 +7,13 @@ test("glass themes switch live, fit mobile and round-trip settings", async ({
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/");
   await page.getByRole("button", { name: "Pause", exact: true }).click();
-  // The worker may deliver one last update after pausing; wait until the time is stable.
-  const clock = page.locator(".simulation-bottom b");
-  let time = await clock.textContent();
-  await expect
-    .poll(async () => {
-      const previous = time;
-      await page.waitForTimeout(250);
-      time = await clock.textContent();
-      return time === previous;
-    })
-    .toBe(true);
+  const time = await stableSimTime(page);
   const theme = page.getByLabel("Interface theme", { exact: true });
   await expect(theme).toHaveValue("classic");
   for (const value of ["glass-dark", "glass-light"]) {
     await theme.selectOption(value);
     await expect(page.locator("html")).toHaveAttribute("data-theme", value);
-    await expect(page.locator(".simulation-bottom b")).toHaveText(time!);
+    await expect(page.locator(".simulation-bottom b")).toHaveText(time);
     expect(
       await page
         .locator(".panel")

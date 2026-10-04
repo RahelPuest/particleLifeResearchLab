@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { stableSimTime } from "./helpers";
 test("metabolic GPU blends forces and converts composition with cached rule updates", async ({
   page,
 }, info) => {
@@ -271,7 +272,7 @@ test("randomize replaces rules live without changing mixing, speed or paused sta
     .selectOption("exact");
   await page.getByLabel("Conversion speed", { exact: true }).fill("1.5");
   await page.getByLabel("Initial mixing", { exact: true }).fill("0.5");
-  const before = await page.locator(".simulation-bottom b").textContent();
+  const before = await stableSimTime(page);
   await page
     .getByRole("button", { name: "Randomize rules", exact: true })
     .click();
@@ -285,7 +286,7 @@ test("randomize replaces rules live without changing mixing, speed or paused sta
   await expect(page.getByLabel("Initial mixing", { exact: true })).toHaveValue(
     "0.5",
   );
-  await expect(page.locator(".simulation-bottom b")).toHaveText(before!);
+  await expect(page.locator(".simulation-bottom b")).toHaveText(before);
   const downloading = page.waitForEvent("download");
   await page
     .getByRole("button", { name: "Save settings", exact: true })
