@@ -1,0 +1,79 @@
+{
+  "runtime": "v24.4.0",
+  "platform": "darwin",
+  "method": "Median of 5 steps after 2 warm-up steps, fixed seed 42. CPU physics only; milliseconds per step. Clustered positions initially span 30% of world width.",
+  "results": [
+    {
+      "count": 1800,
+      "distribution": "uniform",
+      "radius": 0.13,
+      "previousGrid": 21.44,
+      "quadtree": 13.57,
+      "optimizedGrid": 5.72,
+      "speedup": 3.75
+    },
+    {
+      "count": 1800,
+      "distribution": "clustered",
+      "radius": 0.13,
+      "previousGrid": 85.7,
+      "quadtree": 55.49,
+      "optimizedGrid": 18.97,
+      "speedup": 4.52
+    },
+    {
+      "count": 5000,
+      "distribution": "uniform",
+      "radius": 0.13,
+      "previousGrid": 90.91,
+      "quadtree": 64.03,
+      "optimizedGrid": 22.51,
+      "speedup": 4.04
+    },
+    {
+      "count": 5000,
+      "distribution": "clustered",
+      "radius": 0.13,
+      "previousGrid": 363.14,
+      "quadtree": 219.22,
+      "optimizedGrid": 96.47,
+      "speedup": 3.76
+    },
+    {
+      "count": 10000,
+      "distribution": "uniform",
+      "radius": 0.13,
+      "previousGrid": 358.09,
+      "quadtree": 209.73,
+      "optimizedGrid": 97.69,
+      "speedup": 3.67
+    },
+    {
+      "count": 10000,
+      "distribution": "clustered",
+      "radius": 0.13,
+      "previousGrid": 864.01,
+      "quadtree": 687.82,
+      "optimizedGrid": 273.85,
+      "speedup": 3.16
+    },
+    {
+      "count": 20000,
+      "distribution": "uniform",
+      "radius": 0.13,
+      "previousGrid": 2042.73,
+      "quadtree": 1189,
+      "optimizedGrid": 450.83,
+      "speedup": 4.53
+    },
+    {
+      "count": 20000,
+      "distribution": "clustered",
+      "radius": 0.13,
+      "previousGrid": 3499.55,
+      "quadtree": 1593.62,
+      "optimizedGrid": 580.12,
+      "speedup": 6.03
+    }
+  ]
+}

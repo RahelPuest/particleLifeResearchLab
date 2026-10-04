@@ -1,0 +1,186 @@
+{
+  "runtime": "v24.4.0",
+  "method": "One warmup and median of 3 CPU steps. Accuracy measured on the identical seeded initial state against theta=0 direct tree interactions. Radius 0.13, attract-then-repel curves. This is not a GPU benchmark or universal error bound.",
+  "results": [
+    {
+      "count": 1800,
+      "distribution": "uniform",
+      "theta": 0.3,
+      "relativeRmsForceError": 0,
+      "maxAbsForceError": 0,
+      "aggregatedSpeciesNodes": 0,
+      "directPairs": 171534,
+      "medianCpuStepMs": 9.931250000000006
+    },
+    {
+      "count": 1800,
+      "distribution": "uniform",
+      "theta": 0.6,
+      "relativeRmsForceError": 0,
+      "maxAbsForceError": 0,
+      "aggregatedSpeciesNodes": 0,
+      "directPairs": 171534,
+      "medianCpuStepMs": 11.06041700000003
+    },
+    {
+      "count": 1800,
+      "distribution": "uniform",
+      "theta": 1,
+      "relativeRmsForceError": 0,
+      "maxAbsForceError": 0,
+      "aggregatedSpeciesNodes": 0,
+      "directPairs": 171534,
+      "medianCpuStepMs": 11.148208000000011
+    },
+    {
+      "count": 1800,
+      "distribution": "clustered",
+      "theta": 0.3,
+      "relativeRmsForceError": 0,
+      "maxAbsForceError": 0,
+      "aggregatedSpeciesNodes": 0,
+      "directPairs": 1268796,
+      "medianCpuStepMs": 17.632375000000025
+    },
+    {
+      "count": 1800,
+      "distribution": "clustered",
+      "theta": 0.6,
+      "relativeRmsForceError": 0,
+      "maxAbsForceError": 0,
+      "aggregatedSpeciesNodes": 0,
+      "directPairs": 1268796,
+      "medianCpuStepMs": 18.763166999999953
+    },
+    {
+      "count": 1800,
+      "distribution": "clustered",
+      "theta": 1,
+      "relativeRmsForceError": 0,
+      "maxAbsForceError": 0,
+      "aggregatedSpeciesNodes": 0,
+      "directPairs": 1268796,
+      "medianCpuStepMs": 16.945084000000065
+    },
+    {
+      "count": 5000,
+      "distribution": "uniform",
+      "theta": 0.3,
+      "relativeRmsForceError": 0,
+      "maxAbsForceError": 0,
+      "aggregatedSpeciesNodes": 0,
+      "directPairs": 1324722,
+      "medianCpuStepMs": 83.31495800000016
+    },
+    {
+      "count": 5000,
+      "distribution": "uniform",
+      "theta": 0.6,
+      "relativeRmsForceError": 0.011805480657471614,
+      "maxAbsForceError": 0.43058212783132,
+      "aggregatedSpeciesNodes": 155046,
+      "directPairs": 1144794,
+      "medianCpuStepMs": 105.49883299999988
+    },
+    {
+      "count": 5000,
+      "distribution": "uniform",
+      "theta": 1,
+      "relativeRmsForceError": 0.02744565127317186,
+      "maxAbsForceError": 0.65638010927879,
+      "aggregatedSpeciesNodes": 751794,
+      "directPairs": 450219,
+      "medianCpuStepMs": 125.46579100000008
+    },
+    {
+      "count": 5000,
+      "distribution": "clustered",
+      "theta": 0.3,
+      "relativeRmsForceError": 0,
+      "maxAbsForceError": 0,
+      "aggregatedSpeciesNodes": 0,
+      "directPairs": 9751312,
+      "medianCpuStepMs": 92.13604200000009
+    },
+    {
+      "count": 5000,
+      "distribution": "clustered",
+      "theta": 0.6,
+      "relativeRmsForceError": 0.005913936493157751,
+      "maxAbsForceError": 2.73549657333686,
+      "aggregatedSpeciesNodes": 427573,
+      "directPairs": 8314824,
+      "medianCpuStepMs": 96.63362499999994
+    },
+    {
+      "count": 5000,
+      "distribution": "clustered",
+      "theta": 1,
+      "relativeRmsForceError": 0.02480654590848688,
+      "maxAbsForceError": 6.890357113451955,
+      "aggregatedSpeciesNodes": 1939706,
+      "directPairs": 3231799,
+      "medianCpuStepMs": 106.40541600000051
+    },
+    {
+      "count": 10000,
+      "distribution": "uniform",
+      "theta": 0.3,
+      "relativeRmsForceError": 0,
+      "maxAbsForceError": 0,
+      "aggregatedSpeciesNodes": 0,
+      "directPairs": 5303794,
+      "medianCpuStepMs": 233.21250000000055
+    },
+    {
+      "count": 10000,
+      "distribution": "uniform",
+      "theta": 0.6,
+      "relativeRmsForceError": 0.017047511687010443,
+      "maxAbsForceError": 0.6543983376780087,
+      "aggregatedSpeciesNodes": 541273,
+      "directPairs": 4580675,
+      "medianCpuStepMs": 261.73704199999975
+    },
+    {
+      "count": 10000,
+      "distribution": "uniform",
+      "theta": 1,
+      "relativeRmsForceError": 0.03869722848749198,
+      "maxAbsForceError": 1.192312827196229,
+      "aggregatedSpeciesNodes": 2618272,
+      "directPairs": 1800938,
+      "medianCpuStepMs": 339.77800000000025
+    },
+    {
+      "count": 10000,
+      "distribution": "clustered",
+      "theta": 0.3,
+      "relativeRmsForceError": 0,
+      "maxAbsForceError": 0,
+      "aggregatedSpeciesNodes": 0,
+      "directPairs": 39340538,
+      "medianCpuStepMs": 256.08129200000076
+    },
+    {
+      "count": 10000,
+      "distribution": "clustered",
+      "theta": 0.6,
+      "relativeRmsForceError": 0.006124330804609754,
+      "maxAbsForceError": 4.641856758838088,
+      "aggregatedSpeciesNodes": 889201,
+      "directPairs": 33572064,
+      "medianCpuStepMs": 271.8889170000002
+    },
+    {
+      "count": 10000,
+      "distribution": "clustered",
+      "theta": 1,
+      "relativeRmsForceError": 0.028359708048929757,
+      "maxAbsForceError": 14.240743940538891,
+      "aggregatedSpeciesNodes": 4046713,
+      "directPairs": 13046631,
+      "medianCpuStepMs": 269.89508300000125
+    }
+  ]
+}

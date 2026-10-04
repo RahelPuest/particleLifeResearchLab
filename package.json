@@ -1,0 +1,32 @@
+{
+  "name": "particle-life",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "benchmark": "node --import tsx scripts/benchmark.ts"
+  },
+  "dependencies": {
+    "lucide-react": "0.468.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "22.13.10",
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5",
+    "@vitejs/plugin-react": "6.1.1",
+    "@webgpu/types": "0.1.64",
+    "prettier": "3.6.2",
+    "tsx": "4.23.15",
+    "typescript": "5.7.3",
+    "vite": "8.3.1",
+    "vitest": "5.0.2"
+  }
+}

@@ -1,0 +1,754 @@
+{
+  "date": "2026-09-30T04:30:29.850Z",
+  "method": "Same frozen state per backend and repetition. One warmup and three wall-time samples, excluding initial upload completion. Includes submission/completion, excludes rendering. GPU pass timestamps recorded separately if supported. Evolved snapshot uses 180 exact GPU steps. Barnes–Hut theta=0.6 is approximate; other modes exact. Maximum of three samples is not p95.",
+  "adapter": {
+    "vendor": "apple",
+    "architecture": "metal-3"
+  },
+  "rows": [
+    {
+      "count": 1800,
+      "distribution": "uniform",
+      "solver": "exact",
+      "medianMs": 16.59999990463257,
+      "maxMs": 17,
+      "gpuPhasesMs": null
+    },
+    {
+      "count": 1800,
+      "distribution": "uniform",
+      "solver": "grid-gpu",
+      "medianMs": 1.3000001907348633,
+      "maxMs": 4,
+      "gpuPhasesMs": {
+        "clear": 0.005041,
+        "histogram": 0.005457,
+        "prefix": 0.032456,
+        "scatter": 0.007165,
+        "grid": 0.178617
+      }
+    },
+    {
+      "count": 1800,
+      "distribution": "uniform",
+      "solver": "bvh-gpu",
+      "medianMs": 1.8000001907348633,
+      "maxMs": 1.8000001907348633,
+      "gpuPhasesMs": {
+        "clear": 0.199075,
+        "histogram": 0.0055,
+        "prefix": 0.043456,
+        "scatter": 1.741711,
+        "leafBounds": 0.161243,
+        "reduceBounds": 0.023375,
+        "bvh": 0.565683
+      }
+    },
+    {
+      "count": 1800,
+      "distribution": "uniform",
+      "solver": "all-pairs-gpu",
+      "medianMs": 2.8000001907348633,
+      "maxMs": 4.5,
+      "gpuPhasesMs": {
+        "allPairs": 0.762382
+      }
+    },
+    {
+      "count": 1800,
+      "distribution": "uniform",
+      "solver": "barnes-hut-gpu",
+      "medianMs": 2.8999996185302734,
+      "maxMs": 7,
+      "gpuPhasesMs": {
+        "clear": 0.032999,
+        "insert": 0.008875,
+        "leaves": 0.019957,
+        "reduce": 0.081204,
+        "advance": 1.75692
+      }
+    },
+    {
+      "count": 1800,
+      "distribution": "evolved-180-steps",
+      "solver": "exact",
+      "medianMs": 4.799999713897705,
+      "maxMs": 4.900000095367432,
+      "gpuPhasesMs": null
+    },
+    {
+      "count": 1800,
+      "distribution": "evolved-180-steps",
+      "solver": "grid-gpu",
+      "medianMs": 1.4000000953674316,
+      "maxMs": 6.5,
+      "gpuPhasesMs": {
+        "clear": 0.006583,
+        "histogram": 0.008541,
+        "prefix": 0.336656,
+        "scatter": 0.048832,
+        "grid": 0.315241
+      }
+    },
+    {
+      "count": 1800,
+      "distribution": "evolved-180-steps",
+      "solver": "bvh-gpu",
+      "medianMs": 1.8000001907348633,
+      "maxMs": 7.5,
+      "gpuPhasesMs": {
+        "clear": 0.006334,
+        "histogram": 0.007333,
+        "prefix": 0.047332,
+        "scatter": 0.00925,
+        "leafBounds": 0.011374,
+        "reduceBounds": 0.033373,
+        "bvh": 0.582941
+      }
+    },
+    {
+      "count": 1800,
+      "distribution": "evolved-180-steps",
+      "solver": "all-pairs-gpu",
+      "medianMs": 5.300000190734863,
+      "maxMs": 11,
+      "gpuPhasesMs": {
+        "allPairs": 1.06605
+      }
+    },
+    {
+      "count": 1800,
+      "distribution": "evolved-180-steps",
+      "solver": "barnes-hut-gpu",
+      "medianMs": 3.8000001907348633,
+      "maxMs": 7.399999618530273,
+      "gpuPhasesMs": {
+        "clear": 5.822197,
+        "insert": 0.02525,
+        "leaves": 0.103664,
+        "reduce": 0.09062100000000001,
+        "advance": 2.4528
+      }
+    },
+    {
+      "count": 1800,
+      "distribution": "clump",
+      "solver": "exact",
+      "medianMs": 42.30000019073486,
+      "maxMs": 42.69999980926514,
+      "gpuPhasesMs": null
+    },
+    {
+      "count": 1800,
+      "distribution": "clump",
+      "solver": "grid-gpu",
+      "medianMs": 2.5,
+      "maxMs": 5.5,
+      "gpuPhasesMs": {
+        "clear": 0.266409,
+        "histogram": 0.032624,
+        "prefix": 0.071498,
+        "scatter": 2.332429,
+        "grid": 1.206797
+      }
+    },
+    {
+      "count": 1800,
+      "distribution": "clump",
+      "solver": "bvh-gpu",
+      "medianMs": 2.4000000953674316,
+      "maxMs": 5.700000286102295,
+      "gpuPhasesMs": {
+        "clear": 0.008,
+        "histogram": 0.007875,
+        "prefix": 0.044831,
+        "scatter": 0.009417,
+        "leafBounds": 0.011249,
+        "reduceBounds": 0.031123000000000005,
+        "bvh": 1.185047
+      }
+    },
+    {
+      "count": 1800,
+      "distribution": "clump",
+      "solver": "all-pairs-gpu",
+      "medianMs": 2,
+      "maxMs": 3.5999999046325684,
+      "gpuPhasesMs": {
+        "allPairs": 1.080967
+      }
+    },
+    {
+      "count": 1800,
+      "distribution": "clump",
+      "solver": "barnes-hut-gpu",
+      "medianMs": 7.099999904632568,
+      "maxMs": 10.300000190734863,
+      "gpuPhasesMs": {
+        "clear": 0.003707,
+        "insert": 0.004459,
+        "leaves": 0.017333,
+        "reduce": 0.0225,
+        "advance": 2.961746
+      }
+    },
+    {
+      "count": 5000,
+      "distribution": "uniform",
+      "solver": "exact",
+      "medianMs": 42.19999980926514,
+      "maxMs": 49.69999980926514,
+      "gpuPhasesMs": null
+    },
+    {
+      "count": 5000,
+      "distribution": "uniform",
+      "solver": "grid-gpu",
+      "medianMs": 4,
+      "maxMs": 6.200000286102295,
+      "gpuPhasesMs": {
+        "clear": 0.006459,
+        "histogram": 0.010875,
+        "prefix": 0.05779,
+        "scatter": 2.385296,
+        "grid": 0.793696
+      }
+    },
+    {
+      "count": 5000,
+      "distribution": "uniform",
+      "solver": "bvh-gpu",
+      "medianMs": 3.0999999046325684,
+      "maxMs": 6.700000286102295,
+      "gpuPhasesMs": {
+        "clear": 0.006541,
+        "histogram": 0.009165,
+        "prefix": 0.052333,
+        "scatter": 0.016583,
+        "leafBounds": 0.030625,
+        "reduceBounds": 0.043414999999999995,
+        "bvh": 1.772556
+      }
+    },
+    {
+      "count": 5000,
+      "distribution": "uniform",
+      "solver": "all-pairs-gpu",
+      "medianMs": 9,
+      "maxMs": 9,
+      "gpuPhasesMs": {
+        "allPairs": 3.983274
+      }
+    },
+    {
+      "count": 5000,
+      "distribution": "uniform",
+      "solver": "barnes-hut-gpu",
+      "medianMs": 12.099999904632568,
+      "maxMs": 12.199999809265137,
+      "gpuPhasesMs": {
+        "clear": 1.25869,
+        "insert": 0.150414,
+        "leaves": 0.008333,
+        "reduce": 1.1699819999999996,
+        "advance": 3.203369
+      }
+    },
+    {
+      "count": 5000,
+      "distribution": "evolved-180-steps",
+      "solver": "exact",
+      "medianMs": 43.19999980926514,
+      "maxMs": 44,
+      "gpuPhasesMs": null
+    },
+    {
+      "count": 5000,
+      "distribution": "evolved-180-steps",
+      "solver": "grid-gpu",
+      "medianMs": 1.5999999046325684,
+      "maxMs": 1.6999998092651367,
+      "gpuPhasesMs": {
+        "clear": 0.19983,
+        "histogram": 0.009207,
+        "prefix": 0.048457,
+        "scatter": 2.002053,
+        "grid": 0.872528
+      }
+    },
+    {
+      "count": 5000,
+      "distribution": "evolved-180-steps",
+      "solver": "bvh-gpu",
+      "medianMs": 3.200000286102295,
+      "maxMs": 3.4000000953674316,
+      "gpuPhasesMs": {
+        "clear": 0.005208,
+        "histogram": 0.006875,
+        "prefix": 0.038541,
+        "scatter": 0.009541,
+        "leafBounds": 0.00925,
+        "reduceBounds": 0.034877,
+        "bvh": 1.565684
+      }
+    },
+    {
+      "count": 5000,
+      "distribution": "evolved-180-steps",
+      "solver": "all-pairs-gpu",
+      "medianMs": 8.900000095367432,
+      "maxMs": 11.299999713897705,
+      "gpuPhasesMs": {
+        "allPairs": 3.976607
+      }
+    },
+    {
+      "count": 5000,
+      "distribution": "evolved-180-steps",
+      "solver": "barnes-hut-gpu",
+      "medianMs": 7.900000095367432,
+      "maxMs": 9.900000095367432,
+      "gpuPhasesMs": {
+        "clear": 1.474686,
+        "insert": 0.150373,
+        "leaves": 0.044291,
+        "reduce": 1.1613140000000002,
+        "advance": 6.021075
+      }
+    },
+    {
+      "count": 5000,
+      "distribution": "clump",
+      "solver": "exact",
+      "medianMs": 351,
+      "maxMs": 417.59999990463257,
+      "gpuPhasesMs": null
+    },
+    {
+      "count": 5000,
+      "distribution": "clump",
+      "solver": "grid-gpu",
+      "medianMs": 5.699999809265137,
+      "maxMs": 10.399999618530273,
+      "gpuPhasesMs": {
+        "clear": 2.554252,
+        "histogram": 0.319954,
+        "prefix": 0.069541,
+        "scatter": 2.394422,
+        "grid": 3.992148
+      }
+    },
+    {
+      "count": 5000,
+      "distribution": "clump",
+      "solver": "bvh-gpu",
+      "medianMs": 6.199999809265137,
+      "maxMs": 7.300000190734863,
+      "gpuPhasesMs": {
+        "clear": 0.00375,
+        "histogram": 0.004875,
+        "prefix": 0.022457,
+        "scatter": 0.0065,
+        "leafBounds": 0.005875,
+        "reduceBounds": 0.022292,
+        "bvh": 2.128927
+      }
+    },
+    {
+      "count": 5000,
+      "distribution": "clump",
+      "solver": "all-pairs-gpu",
+      "medianMs": 3.1999998092651367,
+      "maxMs": 3.3000001907348633,
+      "gpuPhasesMs": {
+        "allPairs": 5.393543
+      }
+    },
+    {
+      "count": 5000,
+      "distribution": "clump",
+      "solver": "barnes-hut-gpu",
+      "medianMs": 21,
+      "maxMs": 26.199999809265137,
+      "gpuPhasesMs": {
+        "clear": 0.199705,
+        "insert": 0.007792,
+        "leaves": 0.030749,
+        "reduce": 1.5521010000000002,
+        "advance": 16.758953
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "uniform",
+      "solver": "exact",
+      "medianMs": 164,
+      "maxMs": 166.30000019073486,
+      "gpuPhasesMs": null
+    },
+    {
+      "count": 10000,
+      "distribution": "uniform",
+      "solver": "grid-gpu",
+      "medianMs": 6.799999713897705,
+      "maxMs": 12.900000095367432,
+      "gpuPhasesMs": {
+        "clear": 0.262246,
+        "histogram": 0.014625,
+        "prefix": 0.061708,
+        "scatter": 2.376505,
+        "grid": 3.124412
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "uniform",
+      "solver": "bvh-gpu",
+      "medianMs": 6.900000095367432,
+      "maxMs": 12.800000190734863,
+      "gpuPhasesMs": {
+        "clear": 0.00325,
+        "histogram": 0.004667,
+        "prefix": 0.022583,
+        "scatter": 0.007333,
+        "leafBounds": 0.006708,
+        "reduceBounds": 0.023247,
+        "bvh": 1.718391
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "uniform",
+      "solver": "all-pairs-gpu",
+      "medianMs": 7.5,
+      "maxMs": 8,
+      "gpuPhasesMs": {
+        "allPairs": 7.246764
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "uniform",
+      "solver": "barnes-hut-gpu",
+      "medianMs": 8.599999904632568,
+      "maxMs": 9.5,
+      "gpuPhasesMs": {
+        "clear": 0.004083,
+        "insert": 0.007042,
+        "leaves": 0.0275,
+        "reduce": 0.033875999999999996,
+        "advance": 6.649982
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "evolved-180-steps",
+      "solver": "exact",
+      "medianMs": 185.90000009536743,
+      "maxMs": 247.10000038146973,
+      "gpuPhasesMs": null
+    },
+    {
+      "count": 10000,
+      "distribution": "evolved-180-steps",
+      "solver": "grid-gpu",
+      "medianMs": 9.099999904632568,
+      "maxMs": 9.5,
+      "gpuPhasesMs": {
+        "clear": 0.006875,
+        "histogram": 0.01525,
+        "prefix": 0.052583,
+        "scatter": 0.020459,
+        "grid": 2.878415
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "evolved-180-steps",
+      "solver": "bvh-gpu",
+      "medianMs": 5.299999713897705,
+      "maxMs": 5.300000190734863,
+      "gpuPhasesMs": {
+        "clear": 0.003625,
+        "histogram": 0.005875,
+        "prefix": 0.025208,
+        "scatter": 0.008333,
+        "leafBounds": 0.006832,
+        "reduceBounds": 0.025541999999999995,
+        "bvh": 1.987012
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "evolved-180-steps",
+      "solver": "all-pairs-gpu",
+      "medianMs": 10.5,
+      "maxMs": 13.300000190734863,
+      "gpuPhasesMs": {
+        "allPairs": 8.800324
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "evolved-180-steps",
+      "solver": "barnes-hut-gpu",
+      "medianMs": 27,
+      "maxMs": 35.90000009536743,
+      "gpuPhasesMs": {
+        "clear": 0.005792,
+        "insert": 0.009709,
+        "leaves": 0.086791,
+        "reduce": 0.04654,
+        "advance": 29.257219
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "clump",
+      "solver": "exact",
+      "medianMs": 1439,
+      "maxMs": 1506.1999998092651,
+      "gpuPhasesMs": null
+    },
+    {
+      "count": 10000,
+      "distribution": "clump",
+      "solver": "grid-gpu",
+      "medianMs": 9.900000095367432,
+      "maxMs": 11.400000095367432,
+      "gpuPhasesMs": {
+        "clear": 0.004166,
+        "histogram": 0.016875,
+        "prefix": 0.041249,
+        "scatter": 0.019541,
+        "grid": 9.904474
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "clump",
+      "solver": "bvh-gpu",
+      "medianMs": 10.300000190734863,
+      "maxMs": 11.199999809265137,
+      "gpuPhasesMs": {
+        "clear": 0.003917,
+        "histogram": 0.040375,
+        "prefix": 0.027625,
+        "scatter": 0.009875,
+        "leafBounds": 0.008042,
+        "reduceBounds": 0.027664999999999995,
+        "bvh": 6.5639
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "clump",
+      "solver": "all-pairs-gpu",
+      "medianMs": 15.099999904632568,
+      "maxMs": 18.09999990463257,
+      "gpuPhasesMs": {
+        "allPairs": 13.264172
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "clump",
+      "solver": "barnes-hut-gpu",
+      "medianMs": 111.7999997138977,
+      "maxMs": 124.2999997138977,
+      "gpuPhasesMs": {
+        "clear": 0.007625,
+        "insert": 0.0125,
+        "leaves": 0.073332,
+        "reduce": 0.063373,
+        "advance": 78.103601
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "uniform",
+      "solver": "exact",
+      "medianMs": 4385.099999904633,
+      "maxMs": 4637.599999904633,
+      "gpuPhasesMs": null
+    },
+    {
+      "count": 50000,
+      "distribution": "uniform",
+      "solver": "grid-gpu",
+      "medianMs": 46.59999990463257,
+      "maxMs": 59,
+      "gpuPhasesMs": {
+        "clear": 0.006584,
+        "histogram": 0.042082,
+        "prefix": 0.05354,
+        "scatter": 0.059332,
+        "grid": 74.683486
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "uniform",
+      "solver": "bvh-gpu",
+      "medianMs": 92.59999990463257,
+      "maxMs": 93.5,
+      "gpuPhasesMs": {
+        "clear": 0.006541,
+        "histogram": 0.029625,
+        "prefix": 0.048374,
+        "scatter": 0.052249,
+        "leafBounds": 0.039916,
+        "reduceBounds": 0.062583,
+        "bvh": 67.284181
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "uniform",
+      "solver": "all-pairs-gpu",
+      "medianMs": 409.19999980926514,
+      "maxMs": 412.09999990463257,
+      "gpuPhasesMs": {
+        "allPairs": 424.059739
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "uniform",
+      "solver": "barnes-hut-gpu",
+      "medianMs": 311.6000003814697,
+      "maxMs": 370.5,
+      "gpuPhasesMs": {
+        "clear": 0.289661,
+        "insert": 0.043832,
+        "leaves": 0.075999,
+        "reduce": 2.6742510000000004,
+        "advance": 331.806729
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "evolved-180-steps",
+      "solver": "exact",
+      "medianMs": 5055.5,
+      "maxMs": 5127.599999904633,
+      "gpuPhasesMs": null
+    },
+    {
+      "count": 50000,
+      "distribution": "evolved-180-steps",
+      "solver": "grid-gpu",
+      "medianMs": 64.09999990463257,
+      "maxMs": 84.90000009536743,
+      "gpuPhasesMs": {
+        "clear": 0.006791,
+        "histogram": 0.047249,
+        "prefix": 0.067041,
+        "scatter": 0.062165,
+        "grid": 82.88061
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "evolved-180-steps",
+      "solver": "bvh-gpu",
+      "medianMs": 92.5,
+      "maxMs": 94.69999980926514,
+      "gpuPhasesMs": {
+        "clear": 0.026208,
+        "histogram": 0.030166,
+        "prefix": 0.054999,
+        "scatter": 0.051915,
+        "leafBounds": 0.039416,
+        "reduceBounds": 0.063041,
+        "bvh": 83.964802
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "evolved-180-steps",
+      "solver": "all-pairs-gpu",
+      "medianMs": 398.40000009536743,
+      "maxMs": 495.30000019073486,
+      "gpuPhasesMs": {
+        "allPairs": 419.514932
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "evolved-180-steps",
+      "solver": "barnes-hut-gpu",
+      "medianMs": 350,
+      "maxMs": 381.19999980926514,
+      "gpuPhasesMs": {
+        "clear": 0.007874,
+        "insert": 0.047374,
+        "leaves": 2.47642,
+        "reduce": 0.125373,
+        "advance": 337.328978
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "clump",
+      "solver": "exact",
+      "medianMs": 34756.40000009537,
+      "maxMs": 37123.09999990463,
+      "gpuPhasesMs": null
+    },
+    {
+      "count": 50000,
+      "distribution": "clump",
+      "solver": "grid-gpu",
+      "medianMs": 534.5,
+      "maxMs": 565.8000001907349,
+      "gpuPhasesMs": {
+        "clear": 0.005125,
+        "histogram": 0.11429,
+        "prefix": 0.188081,
+        "scatter": 0.118581,
+        "grid": 609.251619
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "clump",
+      "solver": "bvh-gpu",
+      "medianMs": 484.30000019073486,
+      "maxMs": 537.0999999046326,
+      "gpuPhasesMs": {
+        "clear": 0.007042,
+        "histogram": 0.039541,
+        "prefix": 0.055999,
+        "scatter": 0.049916,
+        "leafBounds": 0.04204,
+        "reduceBounds": 0.06241599999999999,
+        "bvh": 569.734641
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "clump",
+      "solver": "all-pairs-gpu",
+      "medianMs": 591.2000002861023,
+      "maxMs": 650.2999997138977,
+      "gpuPhasesMs": {
+        "allPairs": 547.58152
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "clump",
+      "solver": "barnes-hut-gpu",
+      "medianMs": 820.5,
+      "maxMs": 853.2000002861023,
+      "gpuPhasesMs": {
+        "clear": 0.005666,
+        "insert": 0.031749,
+        "leaves": 1.844722,
+        "reduce": 0.08845700000000001,
+        "advance": 844.381574
+      }
+    }
+  ]
+}

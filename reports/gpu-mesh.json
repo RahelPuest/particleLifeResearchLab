@@ -1,0 +1,385 @@
+{
+  "note": "Frozen identical seeded inputs. Warm pipelines and cached kernels. Five wall-time samples, GPU compute plus submission/fence, excludes rendering and readback. One-step velocity RMS relative to exact GPU grid; not a long-term trajectory bound.",
+  "adapter": {
+    "vendor": "apple",
+    "architecture": "metal-3"
+  },
+  "rows": [
+    {
+      "count": 10000,
+      "distribution": "uniform",
+      "solver": "grid-gpu",
+      "meshResolution": 128,
+      "medianMs": 3.1000003814697266,
+      "samplesMs": [
+        2.700000286102295,
+        2.8000001907348633,
+        3.1000003814697266,
+        4.400000095367432,
+        4.699999809265137
+      ],
+      "relativeRms": 0,
+      "gpuPhasesMs": {
+        "clear": 0.006333,
+        "histogram": 0.011666,
+        "prefix": 0.034665,
+        "scatter": 0.013708,
+        "grid": 2.165035
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "uniform",
+      "solver": "mesh-gpu",
+      "meshResolution": 64,
+      "medianMs": 1.5,
+      "samplesMs": [
+        1.4000000953674316,
+        1.4000000953674316,
+        1.5,
+        1.5,
+        7.900000095367432
+      ],
+      "relativeRms": 0.20208140282626127,
+      "gpuPhasesMs": {
+        "mesh:clear": 0.009667,
+        "mesh:deposit": 0.029789,
+        "mesh:densityInput": 0.008666,
+        "mesh:densityFFT": 0.085453,
+        "mesh:convolve": 0.048664,
+        "mesh:fieldFFT": 0.083411,
+        "mesh:advance": 0.126159
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "uniform",
+      "solver": "mesh-gpu",
+      "meshResolution": 128,
+      "medianMs": 2,
+      "samplesMs": [
+        1.5999999046325684,
+        1.700000286102295,
+        2,
+        2.3999996185302734,
+        7.900000095367432
+      ],
+      "relativeRms": 0.06175582865620474,
+      "gpuPhasesMs": {
+        "mesh:clear": 0.014,
+        "mesh:deposit": 0.029874,
+        "mesh:densityInput": 0.014332,
+        "mesh:densityFFT": 0.232743,
+        "mesh:convolve": 0.179412,
+        "mesh:fieldFFT": 0.23545100000000002,
+        "mesh:advance": 0.121914
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "uniform",
+      "solver": "mesh-gpu",
+      "meshResolution": 256,
+      "medianMs": 2.3000001907348633,
+      "samplesMs": [
+        2.0999999046325684,
+        2.1999998092651367,
+        2.3000001907348633,
+        2.3999996185302734,
+        2.5999999046325684
+      ],
+      "relativeRms": 0.01659675781057671,
+      "gpuPhasesMs": {
+        "mesh:clear": 0.023624,
+        "mesh:deposit": 0.016709,
+        "mesh:densityInput": 0.034749,
+        "mesh:densityFFT": 0.473653,
+        "mesh:convolve": 0.559816,
+        "mesh:fieldFFT": 0.6326890000000001,
+        "mesh:advance": 0.100039
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "clump",
+      "solver": "grid-gpu",
+      "meshResolution": 128,
+      "medianMs": 13.400000095367432,
+      "samplesMs": [
+        8.5,
+        11.899999618530273,
+        13.400000095367432,
+        15.900000095367432,
+        34.799999713897705
+      ],
+      "relativeRms": 0,
+      "gpuPhasesMs": {
+        "clear": 0.107457,
+        "histogram": 0.077541,
+        "prefix": 0.159247,
+        "scatter": 0.062082,
+        "grid": 34.652138
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "clump",
+      "solver": "mesh-gpu",
+      "meshResolution": 64,
+      "medianMs": 6.899999618530273,
+      "samplesMs": [
+        3.8000001907348633,
+        5.099999904632568,
+        6.899999618530273,
+        10.100000381469727,
+        30.40000009536743
+      ],
+      "relativeRms": 0.059639757410627735,
+      "gpuPhasesMs": {
+        "mesh:clear": 0.01,
+        "mesh:deposit": 0.02904,
+        "mesh:densityInput": 0.00875,
+        "mesh:densityFFT": 0.084081,
+        "mesh:convolve": 0.045665,
+        "mesh:fieldFFT": 0.08416599999999999,
+        "mesh:advance": 1.365521
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "clump",
+      "solver": "mesh-gpu",
+      "meshResolution": 128,
+      "medianMs": 2.5999999046325684,
+      "samplesMs": [
+        2.5999999046325684,
+        2.5999999046325684,
+        2.5999999046325684,
+        4,
+        6.599999904632568
+      ],
+      "relativeRms": 0.016959322221625047,
+      "gpuPhasesMs": {
+        "mesh:clear": 1.979678,
+        "mesh:deposit": 0.21783,
+        "mesh:densityInput": 0.01075,
+        "mesh:densityFFT": 1.929638,
+        "mesh:convolve": 0.129665,
+        "mesh:fieldFFT": 0.217748,
+        "mesh:advance": 0.992235
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "clump",
+      "solver": "mesh-gpu",
+      "meshResolution": 256,
+      "medianMs": 4.099999904632568,
+      "samplesMs": [
+        3.5999999046325684,
+        3.6999998092651367,
+        4.099999904632568,
+        4.800000190734863,
+        5.199999809265137
+      ],
+      "relativeRms": 0.0046379606866975695,
+      "gpuPhasesMs": {
+        "mesh:clear": 0.025999,
+        "mesh:deposit": 0.022834,
+        "mesh:densityInput": 0.037415,
+        "mesh:densityFFT": 0.618699,
+        "mesh:convolve": 0.556075,
+        "mesh:fieldFFT": 0.620532,
+        "mesh:advance": 0.996568
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "uniform",
+      "solver": "grid-gpu",
+      "meshResolution": 128,
+      "medianMs": 91.2999997138977,
+      "samplesMs": [
+        86.19999980926514,
+        86.5,
+        91.2999997138977,
+        116.59999990463257,
+        117
+      ],
+      "relativeRms": 0,
+      "gpuPhasesMs": {
+        "clear": 2.274715,
+        "histogram": 0.314412,
+        "prefix": 0.059124,
+        "scatter": 2.432129,
+        "grid": 103.196717
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "uniform",
+      "solver": "mesh-gpu",
+      "meshResolution": 64,
+      "medianMs": 4.099999904632568,
+      "samplesMs": [
+        3.5,
+        3.8000001907348633,
+        4.099999904632568,
+        10.199999809265137,
+        14.199999809265137
+      ],
+      "relativeRms": 0.20078098438142497,
+      "gpuPhasesMs": {
+        "mesh:clear": 2.915247,
+        "mesh:deposit": 0.317787,
+        "mesh:densityInput": 0.034958,
+        "mesh:densityFFT": 0.090834,
+        "mesh:convolve": 0.035915,
+        "mesh:fieldFFT": 0.083915,
+        "mesh:advance": 1.843722
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "uniform",
+      "solver": "mesh-gpu",
+      "meshResolution": 128,
+      "medianMs": 4.299999713897705,
+      "samplesMs": [
+        3.4000000953674316,
+        3.4000000953674316,
+        4.299999713897705,
+        4.300000190734863,
+        7.199999809265137
+      ],
+      "relativeRms": 0.06032752139441193,
+      "gpuPhasesMs": {
+        "mesh:clear": 0.030167,
+        "mesh:deposit": 0.109499,
+        "mesh:densityInput": 0.014832,
+        "mesh:densityFFT": 0.237287,
+        "mesh:convolve": 0.380954,
+        "mesh:fieldFFT": 0.235621,
+        "mesh:advance": 1.862888
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "uniform",
+      "solver": "mesh-gpu",
+      "meshResolution": 256,
+      "medianMs": 7.400000095367432,
+      "samplesMs": [
+        5.099999904632568,
+        6,
+        7.400000095367432,
+        8.900000095367432,
+        11.099999904632568
+      ],
+      "relativeRms": 0.016245694534588004,
+      "gpuPhasesMs": {
+        "mesh:clear": 0.044375,
+        "mesh:deposit": 0.110207,
+        "mesh:densityInput": 0.066041,
+        "mesh:densityFFT": 0.852279,
+        "mesh:convolve": 0.839987,
+        "mesh:fieldFFT": 0.8570720000000001,
+        "mesh:advance": 1.858805
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "clump",
+      "solver": "grid-gpu",
+      "meshResolution": 128,
+      "medianMs": 477.7000002861023,
+      "samplesMs": [
+        415.7999997138977,
+        435.59999990463257,
+        477.7000002861023,
+        609.3000001907349,
+        628.6999998092651
+      ],
+      "relativeRms": 0,
+      "gpuPhasesMs": {
+        "clear": 2.497003,
+        "histogram": 0.429159,
+        "prefix": 0.443494,
+        "scatter": 2.140801,
+        "grid": 473.135155
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "clump",
+      "solver": "mesh-gpu",
+      "meshResolution": 64,
+      "medianMs": 49.19999980926514,
+      "samplesMs": [
+        39.69999980926514,
+        44.40000009536743,
+        49.19999980926514,
+        49.799999713897705,
+        50.40000009536743
+      ],
+      "relativeRms": 0.03726233971822412,
+      "gpuPhasesMs": {
+        "mesh:clear": 0.02025,
+        "mesh:deposit": 0.15304,
+        "mesh:densityInput": 0.015916,
+        "mesh:densityFFT": 0.140206,
+        "mesh:convolve": 0.059666,
+        "mesh:fieldFFT": 0.18837199999999998,
+        "mesh:advance": 41.451951
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "clump",
+      "solver": "mesh-gpu",
+      "meshResolution": 128,
+      "medianMs": 54.89999961853027,
+      "samplesMs": [
+        46.59999990463257,
+        49.799999713897705,
+        54.89999961853027,
+        60.5,
+        60.80000019073486
+      ],
+      "relativeRms": 0.010750411631637223,
+      "gpuPhasesMs": {
+        "mesh:clear": 0.012667,
+        "mesh:deposit": 0.102373,
+        "mesh:densityInput": 0.014167,
+        "mesh:densityFFT": 0.234246,
+        "mesh:convolve": 0.10679,
+        "mesh:fieldFFT": 0.234954,
+        "mesh:advance": 39.570522
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "clump",
+      "solver": "mesh-gpu",
+      "meshResolution": 256,
+      "medianMs": 68.30000019073486,
+      "samplesMs": [
+        49.5,
+        67.2999997138977,
+        68.30000019073486,
+        70.7999997138977,
+        84
+      ],
+      "relativeRms": 0.002781524722570925,
+      "gpuPhasesMs": {
+        "mesh:clear": 0.090208,
+        "mesh:deposit": 0.118706,
+        "mesh:densityInput": 0.077624,
+        "mesh:densityFFT": 3.828525,
+        "mesh:convolve": 3.604862,
+        "mesh:fieldFFT": 0.857361,
+        "mesh:advance": 41.474201
+      }
+    }
+  ]
+}

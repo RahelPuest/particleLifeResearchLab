@@ -1,0 +1,136 @@
+{
+  "theme": "classic",
+  "mode": "classic",
+  "metabolism": {
+    "rate": 1,
+    "initialMix": 0,
+    "rules": [
+      {
+        "from": 0,
+        "to": 1,
+        "catalyst": 2,
+        "rate": 0.4
+      },
+      {
+        "from": 1,
+        "to": 0,
+        "catalyst": -1,
+        "rate": 0.08
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "catalyst": 0,
+        "rate": 0.3
+      },
+      {
+        "from": 3,
+        "to": 2,
+        "catalyst": -1,
+        "rate": 0.06
+      }
+    ]
+  },
+  "solver": "exact",
+  "theta": 0.6,
+  "neighborBudget": 128,
+  "meshResolution": 128,
+  "visuals": {
+    "mode": "dots",
+    "color": "species",
+    "size": 1,
+    "intensity": 1,
+    "trails": false,
+    "persistence": 0.57
+  },
+  "count": 1800,
+  "radius": 0.13,
+  "strength": 1.5,
+  "friction": 4,
+  "speed": 1,
+  "speedLimitEnabled": false,
+  "maxSpeed": 0.5,
+  "seed": 42,
+  "matrix": [
+    {
+      "near": 0.8,
+      "far": 0.8,
+      "split": 0.55
+    },
+    {
+      "near": -0.45,
+      "far": -0.45,
+      "split": 0.55
+    },
+    {
+      "near": -0.25,
+      "far": -0.25,
+      "split": 0.55
+    },
+    {
+      "near": 0.2,
+      "far": 0.2,
+      "split": 0.55
+    },
+    {
+      "near": -0.3,
+      "far": -0.3,
+      "split": 0.55
+    },
+    {
+      "near": 0.75,
+      "far": 0.75,
+      "split": 0.55
+    },
+    {
+      "near": 0.2,
+      "far": 0.2,
+      "split": 0.55
+    },
+    {
+      "near": -0.5,
+      "far": -0.5,
+      "split": 0.55
+    },
+    {
+      "near": -0.45,
+      "far": -0.45,
+      "split": 0.55
+    },
+    {
+      "near": 0.15,
+      "far": 0.15,
+      "split": 0.55
+    },
+    {
+      "near": 0.8,
+      "far": 0.8,
+      "split": 0.55
+    },
+    {
+      "near": -0.3,
+      "far": -0.3,
+      "split": 0.55
+    },
+    {
+      "near": 0.2,
+      "far": 0.2,
+      "split": 0.55
+    },
+    {
+      "near": -0.5,
+      "far": -0.5,
+      "split": 0.55
+    },
+    {
+      "near": -0.3,
+      "far": -0.3,
+      "split": 0.55
+    },
+    {
+      "near": 0.75,
+      "far": 0.75,
+      "split": 0.55
+    }
+  ]
+}

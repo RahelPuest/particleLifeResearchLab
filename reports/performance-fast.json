@@ -1,0 +1,54 @@
+{
+  "runtime": "v24.4.0",
+  "method": "Opt-in approximate solver; median of 7 CPU physics steps after 3 warm-up steps. Radius 0.13, seed 42. Not equivalent trajectories to exact solver.",
+  "results": [
+    {
+      "count": 5000,
+      "distribution": "uniform",
+      "samples": 128,
+      "medianStepMs": 15.26
+    },
+    {
+      "count": 5000,
+      "distribution": "clustered",
+      "samples": 128,
+      "medianStepMs": 17.18
+    },
+    {
+      "count": 10000,
+      "distribution": "uniform",
+      "samples": 128,
+      "medianStepMs": 29.33
+    },
+    {
+      "count": 10000,
+      "distribution": "clustered",
+      "samples": 128,
+      "medianStepMs": 30.02
+    },
+    {
+      "count": 20000,
+      "distribution": "uniform",
+      "samples": 128,
+      "medianStepMs": 59.73
+    },
+    {
+      "count": 20000,
+      "distribution": "clustered",
+      "samples": 128,
+      "medianStepMs": 60.06
+    },
+    {
+      "count": 50000,
+      "distribution": "uniform",
+      "samples": 128,
+      "medianStepMs": 154.59
+    },
+    {
+      "count": 50000,
+      "distribution": "clustered",
+      "samples": 128,
+      "medianStepMs": 159.42
+    }
+  ]
+}

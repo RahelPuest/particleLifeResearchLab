@@ -1,0 +1,472 @@
+{
+  "date": "2026-09-30T04:37:13.011Z",
+  "method": "Frozen seed-42 state per repetition; radius 0.13. One warmup and three measured steps; median submission/completion wall time excluding initial upload wait and rendering. Phase timestamps separately. Sampled mode uses 128 candidates and is not equivalent to exact modes.",
+  "adapter": {
+    "vendor": "apple",
+    "architecture": "metal-3"
+  },
+  "rows": [
+    {
+      "count": 1800,
+      "distribution": "uniform",
+      "solver": "grid-gpu",
+      "tile": 32,
+      "approximate": false,
+      "medianMs": 0.9000000953674316,
+      "gpuPhasesMs": {
+        "clear": 0.005625,
+        "histogram": 0.007125,
+        "prefix32": 0.04425,
+        "scatter": 0.009125,
+        "grid32": 0.261875
+      }
+    },
+    {
+      "count": 1800,
+      "distribution": "uniform",
+      "solver": "grid-gpu",
+      "tile": 64,
+      "approximate": false,
+      "medianMs": 0.8000001907348633,
+      "gpuPhasesMs": {
+        "clear": 0.006166,
+        "histogram": 0.00775,
+        "prefix": 0.046583,
+        "scatter": 0.009417,
+        "grid": 0.247959
+      }
+    },
+    {
+      "count": 1800,
+      "distribution": "uniform",
+      "solver": "grid-gpu",
+      "tile": 128,
+      "approximate": false,
+      "medianMs": 0.6999998092651367,
+      "gpuPhasesMs": {
+        "clear": 0.005792,
+        "histogram": 0.007375,
+        "prefix128": 0.043786,
+        "scatter": 0.009208,
+        "grid128": 0.248557
+      }
+    },
+    {
+      "count": 1800,
+      "distribution": "uniform",
+      "solver": "bvh-gpu",
+      "tile": 64,
+      "approximate": false,
+      "medianMs": 1.5999999046325684,
+      "gpuPhasesMs": {
+        "clear": 0.005916,
+        "histogram": 0.007125,
+        "prefix": 0.046412,
+        "scatter": 0.008791,
+        "leafBounds": 0.010624,
+        "reduceBounds": 0.029494000000000003,
+        "bvh": 0.802581
+      }
+    },
+    {
+      "count": 1800,
+      "distribution": "uniform",
+      "solver": "fast-gpu",
+      "tile": 64,
+      "approximate": true,
+      "medianMs": 1,
+      "gpuPhasesMs": {
+        "clear": 0.269429,
+        "histogram": 0.007833,
+        "prefix": 0.048828,
+        "scatter": 2.392079,
+        "sampled": 0.483114
+      }
+    },
+    {
+      "count": 1800,
+      "distribution": "clump",
+      "solver": "grid-gpu",
+      "tile": 32,
+      "approximate": false,
+      "medianMs": 1.6999998092651367,
+      "gpuPhasesMs": {
+        "clear": 0.25768,
+        "histogram": 0.015207,
+        "prefix32": 0.076242,
+        "scatter": 2.321127,
+        "grid32": 1.170959
+      }
+    },
+    {
+      "count": 1800,
+      "distribution": "clump",
+      "solver": "grid-gpu",
+      "tile": 64,
+      "approximate": false,
+      "medianMs": 1.6999998092651367,
+      "gpuPhasesMs": {
+        "clear": 0.005708,
+        "histogram": 0.011664,
+        "prefix": 0.05162,
+        "scatter": 0.01354,
+        "grid": 1.151086
+      }
+    },
+    {
+      "count": 1800,
+      "distribution": "clump",
+      "solver": "grid-gpu",
+      "tile": 128,
+      "approximate": false,
+      "medianMs": 1.700000286102295,
+      "gpuPhasesMs": {
+        "clear": 0.355296,
+        "histogram": 0.011666,
+        "prefix128": 0.047912,
+        "scatter": 0.013415,
+        "grid128": 1.143586
+      }
+    },
+    {
+      "count": 1800,
+      "distribution": "clump",
+      "solver": "bvh-gpu",
+      "tile": 64,
+      "approximate": false,
+      "medianMs": 1.700000286102295,
+      "gpuPhasesMs": {
+        "clear": 0.006042,
+        "histogram": 0.007624,
+        "prefix": 0.043745,
+        "scatter": 0.009291,
+        "leafBounds": 0.010666,
+        "reduceBounds": 0.030245,
+        "bvh": 5.586944
+      }
+    },
+    {
+      "count": 1800,
+      "distribution": "clump",
+      "solver": "fast-gpu",
+      "tile": 64,
+      "approximate": true,
+      "medianMs": 1,
+      "gpuPhasesMs": {
+        "clear": 0.005875,
+        "histogram": 0.011499,
+        "prefix": 0.051455,
+        "scatter": 0.013207,
+        "sampled": 0.521176
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "uniform",
+      "solver": "grid-gpu",
+      "tile": 32,
+      "approximate": false,
+      "medianMs": 4.599999904632568,
+      "gpuPhasesMs": {
+        "clear": 0.006375,
+        "histogram": 0.012667,
+        "prefix32": 0.048664,
+        "scatter": 0.017998,
+        "grid32": 3.589947
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "uniform",
+      "solver": "grid-gpu",
+      "tile": 64,
+      "approximate": false,
+      "medianMs": 3.8000001907348633,
+      "gpuPhasesMs": {
+        "clear": 0.007291,
+        "histogram": 0.012874,
+        "prefix": 0.052665,
+        "scatter": 0.018582,
+        "grid": 2.990363
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "uniform",
+      "solver": "grid-gpu",
+      "tile": 128,
+      "approximate": false,
+      "medianMs": 3.9000000953674316,
+      "gpuPhasesMs": {
+        "clear": 1.721505,
+        "histogram": 0.014999,
+        "prefix128": 0.04654,
+        "scatter": 2.406765,
+        "grid128": 3.133398
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "uniform",
+      "solver": "bvh-gpu",
+      "tile": 64,
+      "approximate": false,
+      "medianMs": 4.700000286102295,
+      "gpuPhasesMs": {
+        "clear": 0.177619,
+        "histogram": 0.007416,
+        "prefix": 0.031874,
+        "scatter": 1.182547,
+        "leafBounds": 0.010667,
+        "reduceBounds": 0.024290999999999997,
+        "bvh": 1.744613
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "uniform",
+      "solver": "fast-gpu",
+      "tile": 64,
+      "approximate": true,
+      "medianMs": 1,
+      "gpuPhasesMs": {
+        "clear": 0.003667,
+        "histogram": 0.007084,
+        "prefix": 0.025709,
+        "scatter": 0.010041,
+        "sampled": 0.495818
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "clump",
+      "solver": "grid-gpu",
+      "tile": 32,
+      "approximate": false,
+      "medianMs": 12,
+      "gpuPhasesMs": {
+        "clear": 0.003916,
+        "histogram": 0.019916,
+        "prefix32": 0.072289,
+        "scatter": 0.022749,
+        "grid32": 7.948215
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "clump",
+      "solver": "grid-gpu",
+      "tile": 64,
+      "approximate": false,
+      "medianMs": 8.699999809265137,
+      "gpuPhasesMs": {
+        "clear": 0.0035,
+        "histogram": 0.019916,
+        "prefix": 0.048873,
+        "scatter": 0.02379,
+        "grid": 7.191114
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "clump",
+      "solver": "grid-gpu",
+      "tile": 128,
+      "approximate": false,
+      "medianMs": 9,
+      "gpuPhasesMs": {
+        "clear": 0.004,
+        "histogram": 0.020167,
+        "prefix128": 0.039165,
+        "scatter": 0.023541,
+        "grid128": 7.261736
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "clump",
+      "solver": "bvh-gpu",
+      "tile": 64,
+      "approximate": false,
+      "medianMs": 12.899999618530273,
+      "gpuPhasesMs": {
+        "clear": 0.004709,
+        "histogram": 0.007541,
+        "prefix": 0.028457,
+        "scatter": 0.010999,
+        "leafBounds": 0.008583,
+        "reduceBounds": 0.04012400000000001,
+        "bvh": 7.509271
+      }
+    },
+    {
+      "count": 10000,
+      "distribution": "clump",
+      "solver": "fast-gpu",
+      "tile": 64,
+      "approximate": true,
+      "medianMs": 1.700000286102295,
+      "gpuPhasesMs": {
+        "clear": 0.006458,
+        "histogram": 0.026749,
+        "prefix": 0.065123,
+        "scatter": 0.030707,
+        "sampled": 0.834058
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "uniform",
+      "solver": "grid-gpu",
+      "tile": 32,
+      "approximate": false,
+      "medianMs": 60.700000286102295,
+      "gpuPhasesMs": {
+        "clear": 0.005709,
+        "histogram": 0.032499,
+        "prefix32": 0.047791,
+        "scatter": 0.043749,
+        "grid32": 61.331189
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "uniform",
+      "solver": "grid-gpu",
+      "tile": 64,
+      "approximate": false,
+      "medianMs": 43.700000286102295,
+      "gpuPhasesMs": {
+        "clear": 0.004792,
+        "histogram": 0.029958,
+        "prefix": 0.039207,
+        "scatter": 0.042291,
+        "grid": 45.854134
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "uniform",
+      "solver": "grid-gpu",
+      "tile": 128,
+      "approximate": false,
+      "medianMs": 52.59999990463257,
+      "gpuPhasesMs": {
+        "clear": 0.004792,
+        "histogram": 0.030333,
+        "prefix128": 0.035791,
+        "scatter": 0.042582,
+        "grid128": 46.327918
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "uniform",
+      "solver": "bvh-gpu",
+      "tile": 64,
+      "approximate": false,
+      "medianMs": 44.09999990463257,
+      "gpuPhasesMs": {
+        "clear": 0.004917,
+        "histogram": 1.783015,
+        "prefix": 0.036708,
+        "scatter": 0.0385,
+        "leafBounds": 0.038166,
+        "reduceBounds": 0.047626,
+        "bvh": 42.308313
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "uniform",
+      "solver": "fast-gpu",
+      "tile": 64,
+      "approximate": true,
+      "medianMs": 4.900000095367432,
+      "gpuPhasesMs": {
+        "clear": 0.003917,
+        "histogram": 0.024291,
+        "prefix": 0.030624,
+        "scatter": 0.032708,
+        "sampled": 3.47978
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "clump",
+      "solver": "grid-gpu",
+      "tile": 32,
+      "approximate": false,
+      "medianMs": 384.69999980926514,
+      "gpuPhasesMs": {
+        "clear": 0.295245,
+        "histogram": 0.160913,
+        "prefix32": 2.127842,
+        "scatter": 0.120915,
+        "grid32": 650.45695
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "clump",
+      "solver": "grid-gpu",
+      "tile": 64,
+      "approximate": false,
+      "medianMs": 304.5,
+      "gpuPhasesMs": {
+        "clear": 0.004833,
+        "histogram": 0.113582,
+        "prefix": 0.189581,
+        "scatter": 3.403198,
+        "grid": 345.781224
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "clump",
+      "solver": "grid-gpu",
+      "tile": 128,
+      "approximate": false,
+      "medianMs": 281.40000009536743,
+      "gpuPhasesMs": {
+        "clear": 0.004959,
+        "histogram": 0.114082,
+        "prefix128": 0.113999,
+        "scatter": 0.118581,
+        "grid128": 275.745542
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "clump",
+      "solver": "bvh-gpu",
+      "tile": 64,
+      "approximate": false,
+      "medianMs": 309.2000002861023,
+      "gpuPhasesMs": {
+        "clear": 0.004708,
+        "histogram": 0.027583,
+        "prefix": 0.040374,
+        "scatter": 0.035707,
+        "leafBounds": 0.027833,
+        "reduceBounds": 0.044667000000000005,
+        "bvh": 322.139543
+      }
+    },
+    {
+      "count": 50000,
+      "distribution": "clump",
+      "solver": "fast-gpu",
+      "tile": 64,
+      "approximate": true,
+      "medianMs": 4.600000381469727,
+      "gpuPhasesMs": {
+        "clear": 0.003667,
+        "histogram": 0.086208,
+        "prefix": 0.142497,
+        "scatter": 0.090499,
+        "sampled": 3.356657
+      }
+    }
+  ]
+}

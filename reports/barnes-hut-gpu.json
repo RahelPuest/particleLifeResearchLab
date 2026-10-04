@@ -1,0 +1,89 @@
+{
+  "date": "2026-09-29T20:03:23.356Z",
+  "method": "Chromium WebGPU/Metal test run. CPU wall time includes GPU submission and completion; median of 5 physics steps after 2 warmups. Separate display-only readback timing. Fixed seed, theta 0.6, radius 0.13. Not browser FPS.",
+  "adapter": {
+    "vendor": "apple",
+    "architecture": "metal-3",
+    "description": ""
+  },
+  "timings": [
+    {
+      "count": 1800,
+      "medianStepMs": 1,
+      "displayReadbackMs": 1.4000000953674316
+    },
+    {
+      "count": 5000,
+      "medianStepMs": 3.200000286102295,
+      "displayReadbackMs": 0.40000009536743164
+    },
+    {
+      "count": 10000,
+      "medianStepMs": 5.300000190734863,
+      "displayReadbackMs": 0.5
+    },
+    {
+      "count": 50000,
+      "medianStepMs": 81.30000019073486,
+      "displayReadbackMs": 0.6999998092651367
+    }
+  ],
+  "cases": [
+    {
+      "theta": 0,
+      "distribution": "uniform",
+      "positionError": 5.960464477539063e-8,
+      "velocityError": 2.384185791015625e-7,
+      "displayError": 0,
+      "gpuStepMs": 3.8000001907348633,
+      "aggregated": 0
+    },
+    {
+      "theta": 0,
+      "distribution": "seams",
+      "positionError": 5.960464477539063e-8,
+      "velocityError": 4.172325134277344e-7,
+      "displayError": 0,
+      "gpuStepMs": 6.800000190734863,
+      "aggregated": 0
+    },
+    {
+      "theta": 0,
+      "distribution": "clustered",
+      "positionError": 5.960464477539063e-8,
+      "velocityError": 0.000003159046173095703,
+      "displayError": 0,
+      "gpuStepMs": 2.5,
+      "aggregated": 0
+    },
+    {
+      "theta": 0.6,
+      "distribution": "uniform",
+      "positionError": 5.960464477539063e-8,
+      "velocityError": 2.384185791015625e-7,
+      "displayError": 0,
+      "gpuStepMs": 4.5,
+      "aggregated": 16042
+    },
+    {
+      "theta": 0.6,
+      "distribution": "seams",
+      "positionError": 5.960464477539063e-8,
+      "velocityError": 5.364418029785156e-7,
+      "displayError": 0,
+      "gpuStepMs": 5.599999904632568,
+      "aggregated": 15873
+    },
+    {
+      "theta": 0.6,
+      "distribution": "clustered",
+      "positionError": 5.960464477539063e-8,
+      "velocityError": 0.000003069639205932617,
+      "displayError": 0,
+      "gpuStepMs": 2.5999999046325684,
+      "aggregated": 20576
+    }
+  ],
+  "largeStepAndReadbackMs": 85.69999980926514,
+  "largeFinite": true
+}
